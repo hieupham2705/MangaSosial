@@ -1,4 +1,4 @@
-package com.example.mangasosical.ui
+package com.example.mangasosical.di
 
 import android.app.Application
 import android.content.SharedPreferences

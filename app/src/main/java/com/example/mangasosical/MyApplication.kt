@@ -1,8 +1,7 @@
 package com.example.mangasosical
 
 import android.app.Application
-import com.example.btl_mxh.di.*
-import com.example.mangasosical.ui.*
+import com.example.mangasosical.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -11,8 +10,10 @@ class MyApplication : Application() {
         super.onCreate()
         startKoin {
             androidContext(this@MyApplication)
-            modules(networkModule, repositoryModule, dataSourceModule, apiModule, viewModelModule,
-                sharedPreferencesModule)
+            modules(
+                networkModule, repositoryModule, dataSourceModule, apiModule, viewModelModule,
+                sharedPreferencesModule
+            )
         }
     }
 }

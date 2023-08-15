@@ -1,4 +1,4 @@
-package com.example.btl_mxh.di
+package com.example.mangasosical.di
 
 import android.content.SharedPreferences
 import com.example.mangasosical.utils.extension.getTokenLogin

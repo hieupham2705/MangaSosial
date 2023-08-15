@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MangaSosical</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="password">Password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="or_continue_with">Or Continue with</string>
+    <string name="you_can_use_your_app_or_account_to_login">You can use your app or account to login</string>
+    <string name="log_in">Log in</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="create_a_new_account_or_you_can_log_in">Create a new account or you can log in</string>
+    <string name="our_policies">OUR POLICIES</string>
+    <string name="by_selecting_sign_in_you_agree_to">By selecting “SIGN IN”, you agree to</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="home">Home</string>
+    <string name="genres">Genres</string>
+    <string name="profile">Profile</string>
 </resources>

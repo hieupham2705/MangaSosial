@@ -51,4 +51,6 @@
 
     <dimen name="design_navigation_icon_size" tools:override="true">40dp</dimen>
     <dimen name="design_navigation_active_text" tools:override="true">11sp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="sp_11">11sp</dimen>
 </resources>

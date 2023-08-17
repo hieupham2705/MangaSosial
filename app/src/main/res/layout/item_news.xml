@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+
+    >
+    <RelativeLayout
+        android:background="#1d1d1d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvimg_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp">
+            <ImageView
+                android:id="@+id/img_news"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/img_item_news"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_title_news"
+                android:layout_width="38dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="@dimen/dp_140"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="News"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_time_news"
+                android:layout_width="133dp"
+                android:layout_height="20dp"
+                android:text="07 Jun 2023"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp_140"
+                android:layout_marginLeft="@dimen/dp_80"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_content_news"
+                android:layout_width="280dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="175dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="Lorem ipsum dolor sit amet consectetur. Vel in faucibus mauris ac quis egestas."
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cvimg_news"
+            android:layout_alignTop="@+id/cvimg_news"
+            android:layout_alignRight="@+id/cvimg_news"
+            android:layout_alignBottom="@+id/cvimg_news"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur. Vel in faucibus mauris ac quis egestas.quis egestas.quis egestas.quis egestas.quis egestas.quis egestas ... See more"
+        android:layout_below="@id/cvimg_news"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

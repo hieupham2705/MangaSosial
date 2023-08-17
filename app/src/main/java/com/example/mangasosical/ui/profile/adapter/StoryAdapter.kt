@@ -1,4 +1,4 @@
-package com.example.mangasosical.ui.home.adapter
+package com.example.mangasosical.ui.profile.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

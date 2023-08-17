@@ -22,4 +22,10 @@
     <string name="read_now">Read Now</string>
     <string name="my_list">My List</string>
     <string name="see_all">See all</string>
+    <string name="introduce">Introduce</string>
+    <string name="lorem_ipsum_dolor_dolor_dolor_dolor_dolor_dolor_dolor_dolor_dolor_dolor_dolor_dolor_sit_amet_consectetu">Lorem ipsum dolor dolor dolor dolor dolor dolor dolor dolor dolor dolor dolor dolor sit amet consectetu ...</string>
+    <string name="officer">Officer</string>
+    <string name="female">Female</string>
+    <string name="manga_action_mystery">Manga-Action-Mystery</string>
+    <string name="_12_10_1998">12/10/1998</string>
 </resources>

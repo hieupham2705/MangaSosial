@@ -9,22 +9,24 @@ import com.example.mangasosical.R
 import com.example.mangasosical.base.BaseFragment
 import com.example.mangasosical.base.BaseViewModel
 import com.example.mangasosical.databinding.FragmentProfileBinding
+import com.example.mangasosical.ui.profile.adapter.ProfileAdapter
 
 
 class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBinding::inflate) {
+    private val profileAdapter by lazy { ProfileAdapter() }
     override val viewModel: BaseViewModel
         get() = BaseViewModel()
 
     override fun initData() {
-        
+
     }
 
     override fun handleEvent() {
-        
+
     }
 
     override fun bindData() {
-        
+        binding.recycleview.adapter = profileAdapter
     }
 
 }

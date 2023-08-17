@@ -1,13 +1,9 @@
 package com.example.mangasosical.ui.home
 
-import android.os.Handler
-import android.os.Looper
-import android.view.View
 import androidx.core.view.size
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
-import androidx.viewpager2.widget.ViewPager2
 import com.example.mangasosical.base.BaseFragment
 import com.example.mangasosical.base.BaseViewModel
 import com.example.mangasosical.databinding.FragmentHomeBinding
@@ -49,28 +45,28 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 viewpager2Slide.currentItem = viewpager2Slide.currentItem + 1
             }
             viewpager2Slide.setPageTransformer(comPosPagetarn)
-            viewpager2Slide.registerOnPageChangeCallback(
-                object : ViewPager2.OnPageChangeCallback() {
-                    override fun onPageSelected(position: Int) {
-                        super.onPageSelected(position)
-                        Handler().removeCallbacks(sliderRun)
-                        Handler().postDelayed(sliderRun, 5000)
-                    }
-                }
-            )
+//            viewpager2Slide.registerOnPageChangeCallback(
+//                object : ViewPager2.OnPageChangeCallback() {
+//                    override fun onPageSelected(position: Int) {
+//                        super.onPageSelected(position)
+//                        Handler().removeCallbacks(sliderRun)
+//                        Handler().postDelayed(sliderRun, 5000)
+//                    }
+//                }
+//            )
             recycleview.adapter = homeAdapter
         }
     }
 
-    override fun onPause() {
-        super.onPause()
-        val sliderRun = Runnable {
-            if (binding.viewpager2Slide.currentItem == binding.viewpager2Slide.size - 1)
-                binding.viewpager2Slide.currentItem = 0
-            binding.viewpager2Slide.currentItem = binding.viewpager2Slide.currentItem + 1
-        }
-        Handler().removeCallbacks(sliderRun)
-        Handler().postDelayed(sliderRun, 5000)
-    }
+//    override fun onPause() {
+//        super.onPause()
+//        val sliderRun = Runnable {
+//            if (binding.viewpager2Slide.currentItem == binding.viewpager2Slide.size - 1)
+//                binding.viewpager2Slide.currentItem = 0
+//            binding.viewpager2Slide.currentItem = binding.viewpager2Slide.currentItem + 1
+//        }
+//        Handler().removeCallbacks(sliderRun)
+//        Handler().postDelayed(sliderRun, 5000)
+//    }
 
 }

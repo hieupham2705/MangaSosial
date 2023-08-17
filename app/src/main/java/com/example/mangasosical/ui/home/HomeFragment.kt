@@ -7,6 +7,7 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import com.example.mangasosical.base.BaseFragment
 import com.example.mangasosical.base.BaseViewModel
 import com.example.mangasosical.databinding.FragmentHomeBinding
+import com.example.mangasosical.ui.home.adapter.CommentAdapter
 import com.example.mangasosical.ui.home.adapter.HomeAdapter
 import com.example.mangasosical.ui.home.adapter.SlideShowAdapter
 import java.lang.Math.abs
@@ -15,6 +16,7 @@ import java.lang.Math.abs
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
     private val slideShowAdapter by lazy { SlideShowAdapter() }
     private val homeAdapter by lazy { HomeAdapter() }
+    private val commentAdapter by lazy { CommentAdapter() }
     override val viewModel: BaseViewModel
         get() = BaseViewModel()
 
@@ -55,6 +57,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
 //                }
 //            )
             recycleview.adapter = homeAdapter
+            recycelViewCountComment.adapter = commentAdapter
         }
     }
 

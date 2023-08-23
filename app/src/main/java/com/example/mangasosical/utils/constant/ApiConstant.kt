@@ -4,8 +4,7 @@ object ApiConstant {
 
 
     object URL {
-        const val BASE = "https://de60-14-0-17-214.ngrok.io/api/v1/"
-        const val BASEAPI = "http://103.116.52.52:8081/api/v1/"
+        const val BASE = "http://14.225.7.221:7979"
     }
 
     object TIMEOUT {

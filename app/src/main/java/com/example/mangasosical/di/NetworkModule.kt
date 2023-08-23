@@ -39,7 +39,7 @@ private fun provideOkHttpClient(sharedPreferences: SharedPreferences): OkHttpCli
 
 private fun provideRetrofit(client: OkHttpClient): Retrofit {
     return Retrofit.Builder()
-        .baseUrl(ApiConstant.URL.BASEAPI)
+        .baseUrl(ApiConstant.URL.BASE)
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
         .build()
